@@ -1,2 +1,5 @@
-# HTML-CSS-Curso-em-video
+# Página com exercícios de HTML e CSS 
+  EN: Page with HTML and CSS exercises
+
+  
 
