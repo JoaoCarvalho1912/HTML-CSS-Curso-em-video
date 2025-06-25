@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalhando com arquivos de mídia </title>
+    <style>
+        @media (min-width: 750px) {
+            #v1{
+                width: 480px;
+            }
+        }
+        @media (min-width: 750px) and (max-width: 1049px) {
+            #v2{
+                width: 480px;
+                height: 270px;
+            }
+        }
+        @media (min-width: 1050px){
+            #v2{
+                width: 720px;
+                height: 405px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> Imagens Flexíveis </h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="img/p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/m.png" type="image/png">
+    <img src="img/g.png" alt="imagem flexivel G">
+    </picture> <br>
+        <audio preload="auto" style="background-color: rgb(245, 244, 244);"   controls>
+            <source src="mid/marvin-dance.mp3" type="audio/mpeg">
+        </audio> <br><br>
+        <h1> Vídeo Interno </h1>
+        <video style="width: 350px" id="v1" controls preload="auto" src="mid/skatevideo.mp4"></video><br><br>
+        <h1> Vídeo Externo </h1>
+        <iframe style="aspect-ratio: 16/9;" id="v2" width="350" height="200" src="https://www.youtube.com/embed/TQl0Zi7K2LI?si=TWJZv-wsufzrHxpP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

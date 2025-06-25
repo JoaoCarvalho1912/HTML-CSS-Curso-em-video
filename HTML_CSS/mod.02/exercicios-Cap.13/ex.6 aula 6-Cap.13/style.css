@@ -1,0 +1,19 @@
+@charset "UTF-8";
+index {
+    font-family: 'Courier New', Courier, sans-serif;
+    height: 100%;
+}
+p{
+    text-align: justify;
+}
+body{
+    background-image: linear-gradient(to right, #cacaca, #878787);
+    color: #202022;
+    background-attachment: fixed;
+}
+.t1{
+    text-align: center;
+    background-color: #c7c7c7;
+    box-shadow: 1cap /* desloc lateral */ 1.5cap /* desloc pra baixo */ 2.5cap /* espalhamento */ #898989;
+    padding: 1cap;
+}

@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #c8ffff;
+    text-align: justify;
+}
+h1{
+    color: #6aafaf;
+}
+h1#principal{
+    background-color: #afdfdf;
+    color: #75485E;
+    text-align: center;
+}
+p{
+    color: #ac9b83;
+}
+.bas{
+    color: #31bb3c;
+}
+.int{
+    color: #bbb631;
+}
+.adv{
+    color: #bb3131;
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+     background-color: #c5aeff;
+    display: block;
+    width: 158px; 
+}
+/* todas o que aparecer após digitar : são conhecidas como pseudo-classes */
+div:hover{
+    color: #009595;
+}

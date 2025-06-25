@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            font-weight: bold;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: lightgray;
+            color: darkgreen;
+        }
+        .especial::before{ 
+            content: '=> ';
+        }
+        .especial::after{
+            content: ' <=';
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- para abrir em uma nova aba, deve-se usar target="_blank"-->
+        <ul>
+            <li><a href="https://github.com/JoaoCarvalho1912" target="_blank" class="especial" > Repositório do Github </a></li>
+            <li><a href="https://www.youtube.com/@PajedaAmerica">Canal no Youtoba</a></li>
+            <li><a href="https://www.cursoemvideo.com">Curso em Vídeo</a></li>
+        </ul>
+    </div>
+</body>
+</html>
