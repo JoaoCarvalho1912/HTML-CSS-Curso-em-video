@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Chicle';
+    src: url('fonts/Chicle/Chicle-Regular.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --fonte1:  'Chicle', 'Oswald';
+    --fonte2: 'Oswald';
+    --fonte3: 'Sriracha', cursive;
+}
+*{
+    margin: 0%;
+    width: auto;
+}
+body{
+    background-image: url(imagens/background001.jpg);
+    background-size: cover; /* serve para manter a proporção da imagem e não cortá-la horizontalmente ou verticalmente */
+    background-attachment: fixed; /* faz com que a rolagem também sirva para a imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-family: var(--fonte1);
+    font-size: 820%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+h6{
+    font-family: var(--fonte2);
+    font-weight: 100;
+    font-size: 160%;
+}
+header{
+    width: auto;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-items: center;
+}
+.poema{
+    padding: 3.5% 3.5% 3.5% 2%;
+    line-height: 700%;
+}
+p{
+    font-family: var(--fonte3);
+    font-size: 350%;
+    font-weight: 500;
+}
+#P1,#P3,#P5{
+    background-color: white;
+}
+#P2,#P4{
+    background-color: rgba(0, 0, 0, 0.572);
+    width: fit-content;
+    margin: 2%;
+    padding: 0.5%;
+    color: white;
+}
+section{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover; /* serve para manter a proporção da imagem e não cortá-la horizontalmente ou verticalmente */
+    background-attachment: fixed; /* faz com que a rolagem também sirva para a imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    padding: 1%;
+    box-shadow: 2px 2px 15px black inset;
+}
+footer>p{
+    font-family: var(--fonte2);
+    font-size: 110%;
+    color: white;
+}
+footer>p>a{
+    font-weight: normal;
+    color: gray;
+}
+footer{
+    width: auto;
+    padding: 1%;
+    background-color: black;
+    text-align: center;
+}
+@media screen and (min-width:899px) and (max-width:1001px) {
+    h1{
+        font-size: 620%;
+    }
+    h6{
+        font-size: 120%;
+    }
+    p{
+        font-size: 270%;
+    }
+    footer>p{
+        font-family: var(--fonte2);
+        font-size: 90%;
+        color: white;
+    }
+    .poema{
+        line-height: 450%;
+    }
+}
+@media screen and (min-width:599px) and (max-width:898px) {
+    h1{
+        font-size: 420%;
+    }
+    h6{
+        font-size: 90%;
+    }
+    p{
+        font-size: 170%;
+    }
+    footer>p{
+        font-family: var(--fonte2);
+        font-size: 70%;
+        color: white;
+    }
+    .poema{
+        line-height: 350%;
+    }
+}
+@media screen and (min-width:299px) and (max-width:598px) {
+    h1{
+        font-size: 320%;
+    }
+    h6{
+        font-size: 70%;
+    }
+    p{
+        font-size: 110%;
+    }
+    footer>p{
+        font-family: var(--fonte2);
+        font-size: 60%;
+        color: white;
+    }
+    .poema{
+        line-height: 250%;
+    }
+}
