@@ -11,10 +11,15 @@ body,html{
 }
 main{
     height: 100%;
+    position: relative;
 }
 #principal{
     display: flex;
-    flex-direction: inline-row;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     justify-self: center;
     border: 0.5px solid rgba(110, 109, 109, 0.587);
     box-shadow: 1px 0.5px 0.5px;
@@ -247,10 +252,6 @@ p{
     #login{
         width: 100%;
     }
-    main{
-        position: absolute;
-        left: 80px;
-    }
     p{
         font-size: small;
     }
@@ -294,8 +295,6 @@ p{
     }
     main{
         margin-top: 20%;
-        position: absolute;
-        left: 80px;
     }
     #inputs{
         margin-left: 9%;
