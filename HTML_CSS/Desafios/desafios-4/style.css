@@ -1,0 +1,371 @@
+/* GERAL */ /* background-color: #5A4788; */
+
+body,html{
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    margin: 0%;
+}
+main{
+    height: 100%;
+}
+#principal{
+    display: flex;
+    flex-direction: inline-row;
+    justify-self: center;
+    border: 0.5px solid rgba(110, 109, 109, 0.587);
+    box-shadow: 1px 0.5px 0.5px;
+    align-self: center;
+    width: 53.5%;
+    height: 405px;
+    background-color: white;
+    border-radius: 30px;
+}
+#divli{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 81.8%;   
+    height: 405px;
+    border-radius: 30px;
+}
+#inputs>p{
+    border: 2px solid #5f2c82;
+    background-color: #5f2c82;
+    border-radius: 7px;
+}
+#idpass{
+    margin-top: -1%;
+}
+#email,#psw{
+    border: 1px solid #5f2c82;
+    border-radius: 5px;
+    background-color: #49a09d;
+}
+#sbm{
+    background-color: #49a09d;
+    margin-left: -0.1%;
+    height: 30px;
+    width: 10%;
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+#fgt{
+    color: #49a09d;
+    background-color: white; 
+    border: none;
+    width: 88.5%;
+    margin-top: 3%;
+    border:1px solid #49a09d;
+    box-shadow: 1px 0px 3px;
+    border-radius: 3px;
+    height: 30px;
+    text-align: center;
+}
+#sbm:hover{
+    background-color: #00c0ba;
+}
+#fgt:hover{
+    background-color: #00c0ba;
+    color: white;
+}
+#buttons>p:hover{
+    background-color: #49a09d;
+}
+input::placeholder{
+    color: rgb(86, 86, 82);
+}
+#email:focus,#psw:focus{
+    background-color: white;
+}
+i{
+    vertical-align: middle;
+    font-size: 100px;
+    color: #49a09d;
+    width: 100%;
+}
+#email:focus,#psw:focus{
+    outline-color: #49a09d;
+}
+h2{
+    text-align: center;
+    width: 100%;
+}
+p{
+    padding: 0% 10%;
+    display: inline-flex;
+}
+
+/* TELAS GRANDES */
+
+@media screen and (min-width:993px) {
+    #principal{
+        width: 60%;
+        padding-bottom: 2%;
+        margin-top: 20%;
+        position: absolute;
+        top: -10%;
+    }
+     #inputs{
+        margin-left: 9.9%;
+    }
+     #inputs>p{
+        width: 68%;
+        height: 30px;
+    }
+    i{
+        margin-top: 1%;
+        margin-left: -7%;
+    }
+    #login{
+    width: 100%;
+    }
+     input{
+       width: 800%;
+       margin-right: -13.5%;
+    }
+    img{
+        width: 70%;
+        height: 446px;
+    }
+    #icoemail{
+        margin-top: 0.4%;
+        position: relative;
+        right: 15%;
+    }
+    #sbm {
+        width: 88.5%;
+    }
+}
+
+/* TELAS MÉDIAS */
+@media screen and (min-width: 791px) and (max-width: 992px) {
+    #principal{
+        flex-direction: row-reverse;
+        width: 90%;
+        padding-bottom: 2%;
+        position: absolute;
+        top: 10%;
+    }
+     #inputs{
+        margin-left: 9.9%;
+    }
+     #inputs>p{
+        width: 68%;
+        height: 30px;
+    }
+    i{
+        margin-top: 1%;
+        margin-left: -7%;
+    }
+    #login{
+    width: 100%;
+    }
+     input{
+       width: 800%;
+       margin-right: -13.5%;
+    }
+    img{
+        width: 70%;
+        height: 421px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    #icoemail{
+        margin-top: 0.4%;
+        position: relative;
+        right: 15%;
+    }
+    #sbm {
+        width: 89%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 790px) {
+    body{
+        height: 100%;
+        padding: 10%;
+    }
+    #principal{
+        margin-top: 50%;
+        margin-bottom: 0%;
+        flex-direction: row-reverse;
+        width: 90%;
+        padding-bottom: 2%;
+    }
+     #inputs{
+        margin-left: 9.9%;
+    }
+     #inputs>p{
+        width: 68%;
+        height: 30px;
+    }
+    i{
+        margin-top: 1%;
+        margin-left: -7%;
+    }
+    #login{
+    width: 100%;
+    }
+     input{
+       width: 800%;
+       margin-right: -13.5%;
+    }
+    img{
+        width: 50%;
+        height: 415px;
+        border-radius: 30px 0px 0px 30px;
+
+    }
+    #icoemail{
+        margin-top: 0.4%;
+        position: relative;
+        right: 15%;
+    }
+    #sbm {
+        width: 89%;
+    }
+}
+
+/* TELAS PEQUENAS */
+@media screen and (min-width:511px) and (max-width:600px){
+    body,html{
+    background-color: #5f2c82;
+    background-image: none;
+    }   
+    #principal{
+        flex-direction: column-reverse;
+        margin-top: 20%;
+        height: 55%;
+        width: 90%;
+        padding-bottom: 2%;
+    }
+    #login{
+        width: 100%;
+    }
+    p{
+        font-size: small;
+    }
+    #inputs{
+        margin-left: 10%;
+    } 
+    img{
+        width: 100%;
+        height: 350px;
+    }
+    #inputs>p{
+        width: 68%;
+    }
+    #email,#psw{
+        width: 800%;
+        margin-right: -14%;
+    }
+    #fgt{
+        margin-left: 0%;
+    }
+    #sbm{
+        width: 89%;
+    }
+    i{
+        margin-left: -5%;
+    }
+    input{
+        margin-left: 6% ;
+    } 
+    }
+    @media screen and (min-width:411px) and (max-width:510px) {
+        body,html{
+        background-color: #5f2c82;
+         background-image: none;
+    }
+         #login{
+        width: 100%;
+    }
+    p{
+        font-size: small;
+    }
+    main{
+        margin-top: 20%;
+    }
+    #inputs{
+        margin-left: 9%;
+    } 
+    #principal{
+        flex-direction: column-reverse;
+        height: 75%;
+        width: 90%;
+        padding-bottom: 2.5%;
+    }
+    #sbm{
+        width: 88.5%;
+    }
+    img{
+        height: 400px;
+        width: 100%;
+    }
+    i{
+        margin-left: -8%;
+    }
+    #inputs>p{
+        width: 68%;
+    }
+    #email,#psw{
+        width: 600%;
+        margin-right: -14%;
+    }
+}
+    @media screen and (max-width:410px) {
+        body,html{
+        background-color: #5f2c82;
+        background-image: none;
+    }
+         #login{
+        width: 100%;
+        height: 200%;
+    }
+    p{
+        font-size: small;
+    }
+        #inputs{
+            margin-left: 10.3%;
+        }
+        #principal{
+            flex-direction: column-reverse;
+            height: 80%;
+            width: 70%;
+        }
+        main{
+            margin-top: 20%;
+        }
+        img{
+            height: 300px;
+            width: 100%;
+        }
+        #fgt{
+            margin-left: -0.5%;
+        }
+        #sbm{
+            width: 88%;
+        }
+        #login{
+            padding-bottom: 5%;
+        }
+        i{
+            margin-left: -10%;
+        }
+        #inputs>p{
+            width: 66%;
+        }
+        #email,#psw{
+            width: 400%;
+            margin-right: -14%;
+        }
+        #icoemail{
+           vertical-align: top;
+        }
+    
+}

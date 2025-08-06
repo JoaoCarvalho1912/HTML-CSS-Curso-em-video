@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 2 - tabela escolar</title>
+    <style>
+        *{
+            padding: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+        }
+        td,th{
+            border: 1px black solid;
+        }
+        thead,tfoot,.media{
+            background-color: grey;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        table{
+            width: 400px;
+            height: 200px;
+            border: 0.5px black solid;
+            padding: 0px;
+            border-collapse: collapse;
+            justify-self: center;
+        }
+        h1{
+            font-size: 1em;
+        }
+        .area{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1> Tabela escolar com médias </h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <td rowspan="2">Média</td>
+            </tr>
+             <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" class="area" >Exatas & Biológicas</td>
+                <td>Matemática</td>
+                <td>7.5</td>
+                <td>8.5</td>
+                <td>8.00</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>6.5</td>
+                <td>8.0</td>
+                <td>7.25</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>7.5</td>
+                <td>7.5</td>
+                <td>7.50</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td> 6.5 </td>
+                <td> 7.5 </td>
+                <td> 7.00</td>
+            </tr>
+                <tr class="media">
+                    <td colspan="4"> Média </td>
+                    <td>7.44</td>
+                </tr>
+            <tr>
+                <td rowspan="4" class="area" >Humanas & Linguagens </td>
+                <td>Língua Portuguesa</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>9.00</td>
+            </tr>
+            <tr>
+                <td>Língua Inglesa</td>
+                <td>7.0</td>
+                <td>7.5</td>
+                <td>7.25</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>8.0</td>
+                <td>9.5</td>
+                <td>8.75</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td> 9 </td>
+                <td> 8.5 </td>
+                <td> 8.75 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="media">
+                <td colspan="4"> Média </td>
+                <td>8.44</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <a href="index1.html"> Desafio 1 - tabelas com números e letras </a>
+</body>
+</html>
