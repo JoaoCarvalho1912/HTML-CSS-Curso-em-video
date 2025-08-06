@@ -247,6 +247,10 @@ p{
     #login{
         width: 100%;
     }
+    main{
+        position: absolute;
+        left: 80px;
+    }
     p{
         font-size: small;
     }
