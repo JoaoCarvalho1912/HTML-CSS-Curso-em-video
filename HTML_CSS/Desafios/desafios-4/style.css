@@ -192,7 +192,6 @@ p{
     }
     #principal{
         margin-top: 50%;
-        margin-left: 20%;
         margin-bottom: 0%;
         flex-direction: row-reverse;
         width: 90%;
@@ -299,6 +298,7 @@ p{
     #principal{
         flex-direction: column-reverse;
         height: 75%;
+        margin-left: 20%;
         width: 90%;
         padding-bottom: 2.5%;
     }
