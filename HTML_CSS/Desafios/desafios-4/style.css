@@ -12,6 +12,7 @@ body,html{
 main{
     height: 100%;
     position: relative;
+    width: 100%;
 }
 #principal{
     display: flex;
@@ -28,6 +29,13 @@ main{
     height: 405px;
     background-color: white;
     border-radius: 30px;
+}
+#dimg{
+    background: url(imagem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: left center;
 }
 #divli{
     display: flex;
@@ -105,16 +113,17 @@ p{
     padding: 0% 10%;
     display: inline-flex;
 }
-
+a{
+    text-decoration: none;
+    color: rgb(43, 213, 199);
+    margin: 0% 1% 0% 1%;
+}
 /* TELAS GRANDES */
 
 @media screen and (min-width:993px) {
     #principal{
         width: 60%;
         padding-bottom: 2%;
-        margin-top: 20%;
-        position: absolute;
-        top: -10%;
     }
      #inputs{
         margin-left: 9.9%;
@@ -127,16 +136,16 @@ p{
         margin-top: 1%;
         margin-left: -7%;
     }
+    #dimg{
+        height: 108%;
+        border-radius: 0px 30px 30px 0px;
+    }
     #login{
     width: 100%;
     }
      input{
        width: 800%;
        margin-right: -13.5%;
-    }
-    img{
-        width: 70%;
-        height: 446px;
     }
     #icoemail{
         margin-top: 0.4%;
@@ -146,16 +155,20 @@ p{
     #sbm {
         width: 88.5%;
     }
+    @media screen and (max-width:1080px) {
+            #dimg{
+            height: 105%;
+        }
+    }
 }
 
 /* TELAS MÉDIAS */
 @media screen and (min-width: 791px) and (max-width: 992px) {
     #principal{
+        margin: 0%;
         flex-direction: row-reverse;
         width: 90%;
         padding-bottom: 2%;
-        position: absolute;
-        top: 10%;
     }
      #inputs{
         margin-left: 9.9%;
@@ -168,6 +181,10 @@ p{
         margin-top: 1%;
         margin-left: -7%;
     }
+    #dimg{
+        height: 104.5%;
+        border-radius: 30px 0px 0px 30px;
+    }
     #login{
     width: 100%;
     }
@@ -176,8 +193,6 @@ p{
        margin-right: -13.5%;
     }
     img{
-        width: 70%;
-        height: 421px;
         border-radius: 30px 0px 0px 30px;
     }
     #icoemail{
@@ -193,10 +208,8 @@ p{
 @media screen and (min-width:601px) and (max-width: 790px) {
     body{
         height: 100%;
-        padding: 10%;
     }
     #principal{
-        margin-top: 50%;
         margin-bottom: 0%;
         flex-direction: row-reverse;
         width: 90%;
@@ -204,6 +217,10 @@ p{
     }
      #inputs{
         margin-left: 9.9%;
+    }
+    #dimg{
+        height: 103.5%;
+        border-radius: 30px 0px 0px 30px;
     }
      #inputs>p{
         width: 68%;
@@ -221,10 +238,7 @@ p{
        margin-right: -13.5%;
     }
     img{
-        width: 50%;
-        height: 415px;
         border-radius: 30px 0px 0px 30px;
-
     }
     #icoemail{
         margin-top: 0.4%;
@@ -244,10 +258,9 @@ p{
     }   
     #principal{
         flex-direction: column-reverse;
-        margin-top: 20%;
-        height: 55%;
-        width: 90%;
-        padding-bottom: 2%;
+        height: 80%;
+        width: 70%;
+        padding-bottom: 4%;
     }
     #login{
         width: 100%;
@@ -255,13 +268,13 @@ p{
     p{
         font-size: small;
     }
+    #dimg{
+        height: 85%;
+        border-radius: 30px 30px 0px 0px;
+    }
     #inputs{
         margin-left: 10%;
     } 
-    img{
-        width: 100%;
-        height: 350px;
-    }
     #inputs>p{
         width: 68%;
     }
@@ -288,29 +301,27 @@ p{
          background-image: none;
     }
          #login{
+        height: 100%;
         width: 100%;
+        margin-top: 2%;
     }
     p{
         font-size: small;
-    }
-    main{
-        margin-top: 20%;
     }
     #inputs{
         margin-left: 9%;
     } 
     #principal{
         flex-direction: column-reverse;
-        height: 75%;
-        width: 90%;
-        padding-bottom: 2.5%;
+        height: 80%;
+        width: 80%;
+    }
+    #dimg{
+        height: 85%;
+        border-radius: 30px 30px 0px 0px;
     }
     #sbm{
         width: 88.5%;
-    }
-    img{
-        height: 400px;
-        width: 100%;
     }
     i{
         margin-left: -8%;
@@ -324,53 +335,48 @@ p{
     }
 }
     @media screen and (max-width:410px) {
-        body,html{
-        background-color: #5f2c82;
-        background-image: none;
+    body,html{
+    background-color: #5f2c82;
+    background-image: none;
     }
-         #login{
-        width: 100%;
-        height: 200%;
+    #login{
+    width: 100%;
     }
     p{
-        font-size: small;
+    font-size: small;
     }
-        #inputs{
-            margin-left: 10.3%;
-        }
-        #principal{
-            flex-direction: column-reverse;
-            height: 80%;
-            width: 70%;
-        }
-        main{
-            margin-top: 20%;
-        }
-        img{
-            height: 300px;
-            width: 100%;
-        }
-        #fgt{
-            margin-left: -0.5%;
-        }
-        #sbm{
-            width: 88%;
-        }
-        #login{
-            padding-bottom: 5%;
-        }
-        i{
-            margin-left: -10%;
-        }
-        #inputs>p{
-            width: 66%;
-        }
-        #email,#psw{
-            width: 400%;
-            margin-right: -14%;
-        }
-        #icoemail{
-           vertical-align: top;
-        }
-    
+    #inputs{
+        margin-left: 10.3%;
+    }
+    #principal{
+        flex-direction: column-reverse;
+        height: 70%;
+        width: 70%;
+    }
+    #dimg{
+        height: 100%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    #fgt{
+        margin-left: -0.5%;
+    }
+    #sbm{
+        width: 88%;
+    }
+    #login{
+        padding-bottom: 5%;
+    }
+    i{
+        margin-left: -10%;
+    }
+    #inputs>p{
+        width: 66%;
+    }
+    #email,#psw{
+        width: 400%;
+        margin-right: -14%;
+    }
+    #icoemail{
+    vertical-align: top;
+    }
 }
