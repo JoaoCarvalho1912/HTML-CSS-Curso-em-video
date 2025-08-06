@@ -247,9 +247,6 @@ p{
     #login{
         width: 100%;
     }
-    main{
-        margin-left: 40%;
-    }
     p{
         font-size: small;
     }
@@ -293,7 +290,8 @@ p{
     }
     main{
         margin-top: 20%;
-        margin-left: 40%;
+        position: absolute;
+        left: 80px;
     }
     #inputs{
         margin-left: 9%;
