@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mais elementos HTML de formulário </title>
+    <style>
+        fieldset{
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Elementos HTML - Parte final </h1>
+
+    <form action="pesquisa.php" method="post">
+        <p> Cor: <input type="color" name="cor" id="icor" value="ffffff"> </p>
+        <p> Nível de satisfação: <input type="range" name="nivel" id="inivel" min="1" max="5" value="2" oninput="range.innerHTML = Number(inivel.value)"> 
+        <label for="inivel">
+            <output id="range">2</output>
+        </label>
+    </p>
+        <p> Faça um upload: <br> <input type="file" name="" id=""></p>
+        <input style="background-color: aquamarine;" type="submit" value="Enviar">
+    </form>
+    <form action="estado.php" method="post">
+        <fieldset style="display: flex; width: 98%;">
+            <legend> Selecione uma opção </legend>
+            <fieldset style=" margin-left: 21.5%; width: 200px; background-color: rgba(156, 254, 156, 0.5);">
+                <legend> Norte</legend>
+                <label for="norte"></label>
+                 <select name="Norte" id="norte">
+                    <option value="esc"> --Escolha-- </option>
+                        <optgroup label="Região Norte">
+                            <option value="AC"> Acre </option>
+                            <option value="AM"> Amazonas </option>
+                            <option value="AP"> Amapá</option>
+                            <option value="PA"> Pará </option>
+                            <option value="RO"> Rondônia </option>
+                            <option value="RR"> Roraima </option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+            <fieldset style=" width: 200px;   width: 200px;  background-color: rgba(254, 189, 156, 0.5);">
+                <legend> Centro-Oeste </legend>
+                <label for="co"></label>
+                 <select name="CO" id="co">
+                     <option value="esc"> --Escolha-- </option>
+                        <optgroup label="Região Centro-Oeste">
+                            <option value="DF"> *Distrito Federal </option>
+                            <option value="GO"> Goiás </option>
+                            <option value="MT"> Mato Grosso</option>
+                            <option value="MS"> Mato Grosso do Sul </option>
+                            <option value="TO"> Tocantins </option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+            <fieldset style=" width: 200px;  background-color: rgba(243, 254, 156, 0.5);">
+                <legend> Nordeste </legend>
+                    <label for="nordeste"></label>
+                 <select name="Nordeste" id="nordeste">
+                     <option value="esc"> --Escolha-- </option>
+                        <optgroup label="Região Nordeste">
+                            <option value="AL"> Alagoas </option>
+                            <option value="BA"> Bahia </option>
+                            <option value="CE"> Ceará </option>
+                            <option value="MA"> Maranhão </option>
+                            <option value="PB"> Paraíba </option>
+                            <option value="PE"> Pernambuco </option>
+                            <option value="PI">Piauí </option>
+                            <option value="RN"> Rio Grande do Norte </option>
+                            <option value="SE"> Sergipe </option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+            <fieldset style=" width: 200px;  background-color: rgba(166, 156, 254, 0.5);">
+                <legend> Sudeste </legend>
+                <label for="sudeste"></label>
+                 <select name="Sudeste" id="sudeste">
+                     <option value="esc"> --Escolha-- </option>
+                        <optgroup label="Região Sudeste">
+                            <option value="ES"> Espírito Santo </option>
+                            <option value="MG"> Minas Gerais</option>
+                            <option value="RJ"> Rio de Janeiro </option>
+                            <option value="SP"> São Paulo </option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+            <fieldset style=" width: 200px;  background-color: rgba(251, 156, 254, 0.5);">
+                <legend> Sul </legend>
+                <label for="sul"></label>
+                 <select name="Sudeste" id="sul">
+                     <option value="esc"> --Escolha-- </option>
+                        <optgroup label="Região Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+            <input style="background-color: aquamarine; height: 30px; position: relative; left: 10px;  bottom: -50px;" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <p>
+        Escolha uma profissão:
+        <form action="prof.php" method="get">
+            <label for="prof"></label>
+            <input type="text" name="" id="prof" list="idlprof" autocomplete="on">
+                <datalist id="idlprof">
+                    <option>Administrador</option>
+                    <option>Barbeiro</option>
+                    <option>Carpinteiro</option>
+                    <option>Designer</option>
+                    <option>Engenheiro</option>
+                    <option>Fazendeiro</option>
+                    <option>Garçom</option>
+                    <option>Halterofilista</option>
+                    <option>Intérprete de Libras</option>
+                    <option>Jornalista</option>
+                </datalist>
+                 <input style="background-color: aquamarine;" type="submit" value="Enviar">
+        </form>
+    </p>
+    <p>
+        <form action="reclamation.php" method="post">
+            Digite sua reclamação: <br>
+            <textarea name="msg" id="imsg" cols="50" rows="10"></textarea> <br>
+             <input style="background-color: aquamarine;" type="submit" value="Enviar">
+        </form>
+    </p>
+    <form action="soma.php" method="post">
+        <label for="in1"> Número 1: </label>
+        <input type="number" name="in1" id="in1" required min="0"  oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)"> <br><br>
+        <label for="in2"> Número 2: </label>
+        <input type="number" name="in2" id="in2" required min="0" oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)"> <br>
+        <label for="soma"> Soma: </label>
+        <output id="soma"></output>
+    </form> <br><br>
+
+     <form action="idade.php" method="post">
+        <label for="ano"> Ano de nascimento: </label>
+        <input type="number" name="in1" id="ano" required min="1100" max="2025" oninput="idade.innerHTML = 2025 - Number(ano.value) + ' anos' "> <br>
+        <label for="idade"> Sua idade é de </label>
+        <output id="idade"> x anos</output> 
+    </form>
+</body>
+</html>

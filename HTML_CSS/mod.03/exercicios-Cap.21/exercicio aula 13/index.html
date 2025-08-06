@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            height: 100px;
+        }
+        *{
+            font-family: Arial;
+            padding: 4px;
+            text-transform: capitalize;
+            font-weight: lighter;
+            text-align: center;
+        }
+        td,th{
+            border: 0.5px black solid;
+        }
+        col{
+            background-color: rgba(102, 203, 170, 0.6);
+        }
+        tr:nth-child(2n){
+            background-color: azure;
+        }
+        th{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cname">
+            <col class="csex">
+            <col class="cage">
+            <col class="coccupation">
+        </colgroup>
+        <caption style="text-transform: none; background-color: aquamarine;"> Lista com alguns famosos e suas profissôes </caption>
+        <thead>
+            <tr>
+                <th scope="col" width="200px"> name </th>
+                <th scope="col"> sex </th>
+                <th scope="col"> age </th>
+                <th scope="col"> occupation </th>
+            </tr>
+            <tr>
+                <td> Ana Maria Braga</td>
+                <td> F </td>
+                <td> 76 </td>
+                <td> TV Presenter </td>
+            </tr>
+            <tr>
+                <td> Cláudio Castro </td>
+                <td> M </td>
+                <td> 46 </td>
+                <td> Politician </td>
+            </tr>
+            <tr>
+                <td> Gustavo Guanabara </td>
+                <td> M </td>
+                <td> 48 </td>
+                <td> Programmer, Teacher and Youtuber </td>
+            </tr>
+            <tr>
+                <td> Hélio de La Peña </td>
+                <td> M </td>
+                <td> 66 </td>
+                <td> Actor and Humorist </td>
+            </tr>
+            <tr>
+                <td> Maria Fernanda Cândido </td>
+                <td> F </td>
+                <td> 51 </td>
+                <td> Actress </td>
+            </tr>
+            <tr>
+                <td> Paloma Tocci </td>
+                <td> F </td>
+                <td> 42 </td>
+                <td> Reporter and TV Presenter</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

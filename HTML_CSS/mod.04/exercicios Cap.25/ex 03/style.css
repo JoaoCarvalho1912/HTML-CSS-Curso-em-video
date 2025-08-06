@@ -1,0 +1,85 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 200%;
+}
+#title{
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 5px 1px rgb(154, 157, 255);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+div{
+    background-color: rgb(70, 70, 70);
+    padding: 0.5%;
+    text-align: center;
+    width: 97%;
+    border-bottom: 2px solid rgb(223, 208, 208);
+}
+div:hover{
+    background-color: rgba(70, 70, 70, 0.65);
+}
+body{
+    height: fit-content;
+}
+menu{
+    display: none;
+    margin: 0px;
+    width: 95%;
+    justify-self: center;
+    margin: 0px;
+    padding: 0%;
+}
+#divmenu{
+    width: 92.2%;
+    margin-left: -1.8%;
+    justify-self: center;
+}
+#menu{
+    width: 100%;
+    text-align: center;
+    font-size:200%;
+    color: white;
+    margin-right: 0px;
+}
+.tech{
+    margin: 1%;
+    justify-self: center;
+    text-align: justify;
+    width: 50%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 3px 6px 8px rgba(128, 128, 128, 0.574);
+}
+@media screen and (max-width: 600px) {
+    #divmenu{
+        display: none;
+    }
+    menu{
+        display: flex;
+        width: fit-content;
+        margin-bottom: 5%;
+    }
+    menu>div{
+        border-right: 1px solid rgb(223, 208, 208);
+        width: 80px;
+        font-size: smaller;
+        justify-self: center;
+    }
+    #opt1{
+        border-radius: 6px /* CES / CDS ? CDI / CEI */ 0px 0px 6px;
+        margin-left: 6%;
+    }
+    #opt5{
+        border-radius: 0px /* CES / CDS ? CDI / CEI */ 8px 8px 0px;
+         margin-right: 5.6%;
+    }
+}

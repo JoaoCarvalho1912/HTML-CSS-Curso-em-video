@@ -1,0 +1,11 @@
+main{
+   border: 2px black solid;}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+ #pc,#ph,#tt,#tv{
+    display: none;
+ }
+footer::after{
+    content: 'Esse site foi impresso através de github.com/JoaoCarvalho1912';
+}

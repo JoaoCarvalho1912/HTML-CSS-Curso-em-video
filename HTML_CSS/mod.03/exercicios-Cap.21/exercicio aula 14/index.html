@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1> Último exercício com tabelas</h1>
+    <p> Treinando a responsividade com o comando overflow</p>
+    <style>
+        *{
+            padding: 4px;
+            font-family: sans-serif;
+        }
+        th,td{
+            border: 0.5px black solid;
+        }
+        th{
+            font-weight: 600;
+        }
+        table{
+            border-collapse: collapse;
+            width: 1200px;
+        }
+        caption{
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+        #cont{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <table>
+            <colgroup>
+                <col class="cproduto">
+                <col class="cvalor">
+                <col class="cfabricante">
+                <col class="cano">
+                <col class="cval">
+            </colgroup>
+            <caption> Lista de produtos </caption>
+            <thead>
+                <tr>
+                <th>Produto</th>
+                <th>Valor (R$)</th>
+                <th>Fabricante</th>
+                <th>Ano de Criação</th>
+                <th>Validade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Smartphone TC</td>
+                <td>2.500,00</td>
+                <td>TechCorp</td>
+                <td>2020</td>
+                <td>2025</td>
+                </tr>
+                <tr>
+                <td>Notebook i7 8gb 256gb 15.6"</td>
+                <td>3.200,00</td>
+                <td>InnovaTech</td>
+                <td>2019</td>
+                <td>2024</td>
+                </tr>
+                <tr>
+                <td>Televisor 4K 65"</td>
+                <td>4.500,00</td>
+                <td>VisioElectro</td>
+                <td>2018</td>
+                <td>2026</td>
+                </tr>
+                <tr>
+                <td>Geladeira Frost Free</td>
+                <td>2.800,00</td>
+                <td>CoolHome</td>
+                <td>2017</td>
+                <td>2028</td>
+                </tr>
+                <tr>
+                <td>Micro-ondas 30L</td>
+                <td>850,00</td>
+                <td>KitchenPro</td>
+                <td>2016</td>
+                <td>2025</td>
+                </tr>
+                <tr>
+                <td>Furadeira Profissional</td>
+                <td>1.200,00</td>
+                <td>PowerTools</td>
+                <td>2015</td>
+                <td>2023</td>
+                </tr>
+                <tr>
+                <td>Console de Videogame</td>
+                <td>2.000,00</td>
+                <td>GameZone</td>
+                <td>2021</td>
+                <td>2024</td>
+                </tr>
+                <tr>
+                <td>Relógio Smart</td>
+                <td>200,00</td>
+                <td>TimeTech</td>
+                <td>2020</td>
+                <td>2023</td>
+                </tr>
+                <tr>
+                <td>Fone de Ouvido Bluetooth</td>
+                <td>350,00</td>
+                <td>SoundWave</td>
+                <td>2019</td>
+                <td>2022</td>
+                </tr>
+                <tr>
+                <td>Câmera Digital</td>
+                <td>1.500,00</td>
+                <td>PhotoMax</td>
+                <td>2018</td>
+                <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pesquisa eleitoral para 2026 </title>
+    <style>
+        *{
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        header{
+            border-bottom: 3px grey solid;
+            width: 90%;
+            justify-self: center;
+        }
+        header>div{
+            margin-bottom: 10px;
+        }
+        h1,p{
+            display: inline;
+        }
+        h3{
+            font-size: 15px;
+        }
+        p,label{
+            margin: 1%;
+            font-size: 11px;
+        }
+        label{
+            margin: 0%;
+        }
+        #sb,#rt{
+            border-radius: 20px;
+            font-size: 10px;
+            padding: 4px;
+        }
+        #sb:hover{
+            background-color: lightblue ;
+            border: 3px solid white;
+        }
+        #i{
+            margin-top: 2%;
+            justify-self: end;
+        }
+        #rt:hover{
+            background-color: salmon;
+            color: antiquewhite;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <div>
+             <h1 style="color: red;">Esquerda</h1> X <h1 style="color: yellowgreen;">Direita</h1> <h1>- Possíveis candidatos ao Planalto </h1>
+         </div>
+    </header>
+    <form action="eleicao.php" method="post">
+        <h3> Quem você acha que será o principal nome da esquerda para a eleição de 2026 ? </h3>
+            <p> <label for="lula">Lula </label><input type="radio" name="ce" id="lula"> </p>
+            <p> <label for="poste">Fernando Haddad</label> <input type="radio" name="ce" id="poste"> </p>
+            <p> Guilherme Boulos <input name="ce" type="radio" name="" id=""> </p>
+            <p> Tábata Amaral <input type="radio" name="ce" id=""> </p>
+            <p> Ciro Gomes <input type="radio" name="ce" id=""> </p>
+        <h3> E sobre a direita, quem será o candidato ? </h3>
+            <p> Jair Bolsonaro <input type="radio" name="cd" id=""> </p>
+            <p> Ronaldo Caiado <input type="radio" name="cd" id=""> 
+            </p>
+            <p> Romeu Zema <input type="radio" name="cd" id=""> </p>
+            <p> Tarcísio de Freitas <input type="radio" name="cd" id=""> </p>
+            <p> Ratinho Jr. <input type="radio" name="cd" id=""> </p>
+            <br>
+            <div id="i">
+                <input type="reset" value="Limpar" id="rt">
+                <input type="submit" value="Enviar" id="sb">
+            </div>
+            <hr>
+            <form action="habito.php" id="hab">
+                <h1>Formulários com input checkbox</h1>
+                <h3> Quais dessas atividades estão na sua rotina? </h3>
+                <input type="checkbox" name="livro" id="ilivro"> <label for="ilivro" style="vertical-align: middle;"> Ler um livro  </label>
+                <input type="checkbox" name="3r" id="i3r"> <label for="i3r" style="vertical-align: middle;"> Fazer 3 refeições  </label>
+                <input type="checkbox" name="jv" id="ijv"> <label for="ijv" style="vertical-align: middle;"> Jogar videogame  </label>
+                <input type="checkbox" name="ef" id="ief"> <label for="ief" style="vertical-align: middle;"> Praticar ex. físico  </label>
+                <input type="checkbox" name="c" id="ic"> <label for="ic" style="vertical-align: middle;"> Cozinhar </label>
+            </form>
+            <div id="i">
+                <input type="reset" value="Limpar" id="rt">
+                <input type="submit" value="Enviar" id="sb">
+            </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+    body{
+            background-image: url('img/wallpaper002.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+        }
+    main{
+            font-size: 18px;
+            justify-self: center;
+            text-align: center;
+            background-color: rgba(211, 240, 255, 0.572);
+            border: 2px white solid;
+            border-radius: 10px;
+            width: 50%;
+        }
+    p{
+        color: rgb(0, 26, 117)
+    }
+    .d1{
+        background-color: rgba(0, 25, 117, 0.661);
+    }
+    .d1>p{
+        color: rgb(211, 240, 255);
+    }
+    .d2>p{
+        color: rgb(0, 26, 117);
+    }
+    .d2{
+        background-color: rgba(211, 240, 255, 0.534);
+    }
+    .d,.d2{
+        padding: 10px;
+    }
+    .d1{
+        margin: 2px;
+        padding: 4px;
+    }
+    .d>p{
+        background-image: radial-gradient(circle, rgb(2, 72, 107),rgb(65, 0, 56),rgb(146, 95, 66),rgb(255, 75, 132),rgb(112, 70, 209));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+    }

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+*{
+    font-family: sans-serif;
+}
+h1{
+    font-family: Arial;
+}
+menu{
+    display: none;
+}
+main{
+    justify-self: center;
+    text-align: justify;
+}
+article::after{
+    content: 'Esta matéria foi impressa a partir do site github.com/JoaoCarvalho1912'
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Densidade demográfica dos estados brasileiros</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            text-align: center;
+            padding: 4px;
+        }
+        th,td{
+            border: 0.5px solid black;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+            position: sticky;
+            top: -1px;
+        }
+        tfoot{
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+        table{
+            position: relative;
+            justify-self: center;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: silver;
+        }
+        .st{
+            text-align: start;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: silver;
+        }
+        /* 
+            Outra opção, só que com as células ímpares (odd) 
+            
+            tbody > tr:nth-child(odd)){
+            background-color: silver;
+        }
+
+        */
+    </style>
+</head>
+<body>
+    <table>
+        <caption> Densidade demográfica dos estados brasileiros </caption>
+        <thead>
+            <!-- col é porque se refere aos dados da linha vertical , como é o caso dos estados e da densidade demográfica de cada um deles 
+             
+                row é pq se refere aos dados da mesma linha horizontal, como é o caso do último apresentado que é a média da densidade demográfica do país. -->
+            <tr>
+                <th scope="col" style="width: 200px ;">Estados</th>
+                <th scope="col" style="width: 100px ;">Densidade demográfica (hab/km²)</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="st">Acre</td>
+            <td>5,06</td>
+        </tr>
+        <tr>
+            <td class="st">Alagoas</td>
+            <td>112,38</td>
+        </tr>
+        <tr>
+            <td class="st">Amapá</td>
+            <td>5,43</td>
+        </tr>
+        <tr>
+            <td class="st">Amazonas</td>
+            <td>2,53</td>
+        </tr>
+        <tr>
+            <td class="st">Bahia</td>
+            <td>25,96</td>
+        </tr>
+        <tr>
+            <td class="st">Ceará</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td class="st">Distrito Federal</td>
+            <td>507,5</td>
+        </tr>
+        <tr>
+            <td class="st">Espírito Santo</td>
+            <td>86,3</td>
+        </tr>
+        <tr>
+            <td class="st">Goiás</td>
+            <td>20,4</td>
+        </tr>
+        <tr>
+            <td class="st">Maranhão</td>
+            <td>20,6</td>
+        </tr>
+        <tr>
+            <td class="st">Minas Gerais</td>
+            <td>35,35</td>
+        </tr>
+        <tr>
+            <td class="st">Mato Grosso</td>
+            <td>4,2</td>
+        </tr>
+        <tr>
+            <td class="st">Mato Grosso do Sul</td>
+            <td>7,9</td>
+        </tr>
+        <tr>
+            <td class="st">Pará</td>
+            <td>6,8</td>
+        </tr>
+        <tr>
+            <td class="st">Paraíba</td>
+            <td>71,4</td>
+        </tr>
+        <tr>
+            <td class="st">Paraná</td>
+            <td>59,4</td>
+        </tr>
+        <tr>
+            <td class="st">Pernambuco</td>
+            <td>92,3</td>
+        </tr>
+        <tr>
+            <td class="st">Piauí</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td class="st">Rio de Janeiro</td>
+            <td>379,8</td>
+        </tr>
+        <tr>
+            <td class="st">Rio Grande do Norte</td>
+            <td>62,6</td>
+        </tr>
+        <tr>
+            <td class="st">Rio Grande do Sul</td>
+            <td>39,4</td>
+        </tr>
+        <tr>
+            <td class="st">Rondônia</td>
+            <td>6,8</td>
+        </tr>
+        <tr>
+            <td class="st">Roraima</td>
+            <td>2,8</td>
+        </tr>
+        <tr>
+            <td class="st">Santa Catarina</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td class="st">São Paulo</td>
+            <td>185,4</td>
+        </tr>
+        <tr>
+            <td class="st">Sergipe</td>
+            <td>100,9</td>
+        </tr>
+        <tr>
+            <td class="st">Tocantins</td>
+            <td>5,7</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th scope="row"><strong> Média da densidade demográfica do Brasil</strong></th>
+                <td><strong>23,8</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <a href="index.html"> Testando propriedades de tabela </a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+menu{  
+    display: flex;
+    flex-direction: column;
+}
+menu>a{
+    margin: 1%;
+}
+body{
+    background-color: rgb(196, 196, 196);
+}

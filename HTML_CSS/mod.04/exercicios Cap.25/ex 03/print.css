@@ -1,0 +1,23 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+#title{
+    text-align: center;
+     border: 1px solid;
+}
+article{
+    padding: 10px;
+}
+article>h1{
+    font-size: 18px;
+}
+p{
+    line-height: 32px;
+    font-size: 14px;
+}
+.tech{
+    margin: 1px;
+}
+#divmenu,menu{
+    display: none;
+}
