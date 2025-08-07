@@ -1,4 +1,4 @@
-/* GERAL */ /* background-color: #5A4788; */
+/* GERAL */ 
 
 body,html{
     background-image: linear-gradient(to top, #49a09d, #5f2c82);
@@ -113,10 +113,21 @@ p{
     padding: 0% 10%;
     display: inline-flex;
 }
+footer{
+    background-color: black;
+    width: 100%;
+    border-top: 3px solid white;
+    text-align: center;
+}
+h6{
+    color: #8b3fbe;
+    margin: 0%;
+    padding: 1%;
+}
 a{
     text-decoration: none;
     color: rgb(43, 213, 199);
-    margin: 0% 1% 0% 1%;
+    margin: 0% 0.5% 0% 0.5%;
 }
 /* TELAS GRANDES */
 
